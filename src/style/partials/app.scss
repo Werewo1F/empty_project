@@ -1,0 +1,6 @@
+@include fontFace('FontAwesome');
+
+$width: 1200px;
+
+$tablet: 'all and (max-width: #{$width})';
+$mobile: 'all and (max-width: 768px)';
