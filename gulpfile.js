@@ -82,9 +82,9 @@ gulp.task('style:build', function () {
         .pipe(postcss([
             autoprefixer({browsers: ['last 3 versions']})
         ]))
-        .uncss({
+        /*.uncss({
             html: [ path.build.html+'*.html']
-        })
+        })*/
         .pipe(cssmin())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))

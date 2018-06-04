@@ -1,6 +1,7 @@
-@mixin fontFace($font-name, $font-weight: normal, $font-alter: 'sans-serif'){
+@mixin fontFace($font-name, $font-weight: normal/*, $font-alter: 'sans-serif'*/){
   @font-face {
-    font-family: "#{$font-name}, #{$font-alter}";
+    font-family: "#{$font-name}";
+    //font-family: "#{$font-name}, #{$font-alter}";
     font-style: normal;
     font-weight: $font-weight;
 
